@@ -16,14 +16,15 @@ const operationFunctions = {
              else return curr - acc ;
         },0);
     },
-
-
+    multi:(array) => {
+        return array.reduce((acc,curr) => acc * curr);
+    },
 };
 
 console.log(operationFunctions.sub([2,10,1, 2]));
 
+
 const subtração = (numeros) => {
-    
-}
+    return numeros.reduce((acc, curr) => acc * curr)};
 
 console.log(subtração([10,22, 3]));
