@@ -6,12 +6,11 @@ let id = generarId()
 id vale ~ abc1-bb12-234a-bcc2 */
 
 const createRandomID = () => {
-    let randomId = '';
     const randomValues = () => Math.random().toString(16).substr(2, 4);
-
-    randomId = randomValues() + '-' + randomValues() + '-' + randomValues();
-
-    return randomId;
+    
+    return randomValues() + '-' + randomValues() + '-' + randomValues();
 };
 
-// console.log(createRandomID());
+let randomId = createRandomID();
+
+console.log(randomId);
