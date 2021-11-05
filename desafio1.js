@@ -18,3 +18,16 @@ const getLetters = (array) => {
 
 console.log(getLetters(arrayOriginal));
 
+
+/* ------------------------------------------------ */
+
+// Obtenha uma array contendo apenas os números
+const getNumbers = (array) => {
+    const newArray = array.filter((element) => {
+        return (typeof element === 'number')
+    });
+ 
+    return newArray;
+};
+
+console.log(getNumbers(arrayOriginal));
