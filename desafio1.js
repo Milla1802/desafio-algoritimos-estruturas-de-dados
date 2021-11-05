@@ -31,3 +31,17 @@ const getNumbers = (array) => {
 };
 
 console.log(getNumbers(arrayOriginal));
+
+/* ------------------------------------------------ */
+
+// Obtenha o maior número da array acima
+
+const getBiggestNumber = (array) => {
+    const newArray = array.filter((element) => {
+        return (typeof element === 'number')
+    });
+    // O spread operator faz com os itens sejam enviados um a um
+    return Math.max(...newArray);
+};
+
+console.log(getBiggestNumber(arrayOriginal));
