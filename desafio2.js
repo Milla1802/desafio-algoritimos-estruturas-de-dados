@@ -8,23 +8,22 @@ A função de divisão aceita dois parâmetros: a e b.
 
 const operationFunctions = {
     sum: (array) => {
-        return array.reduce((acc,curr) => acc + curr, 0);
+        return array.reduce((acc,curr) => acc + curr);
     },
     sub:(array) => {
-        return array.reduce((acc, curr) => {
-            if(acc > curr) return acc - curr;
-             else return curr - acc ;
-        },0);
+        return array.reduce((acc, curr) => acc - curr );
     },
     multi:(array) => {
         return array.reduce((acc,curr) => acc * curr);
     },
+    div: (a, b) => {
+        if (b === 0) {
+        return 'Dividendo não pode ser 0';
+    } else return a /b ;
+    }
 };
 
-console.log(operationFunctions.sub([2,10,1, 2]));
-
-
-const subtração = (numeros) => {
-    return numeros.reduce((acc, curr) => acc * curr)};
-
-console.log(subtração([10,22, 3]));
+// console.log(operationFunctions.sum([1,-2,3,4,5,6]));
+// console.log(operationFunctions.sub([8,-5,2]));
+// console.log(operationFunctions.multi([1,2,3,4,5,6]));
+// console.log(operationFunctions.div(64,8));
