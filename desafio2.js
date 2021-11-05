@@ -8,9 +8,22 @@ A função de divisão aceita dois parâmetros: a e b.
 
 const operationFunctions = {
     sum: (array) => {
-        return array.reduce((acc,curr) => acc + curr, 0)
+        return array.reduce((acc,curr) => acc + curr, 0);
     },
+    sub:(array) => {
+        return array.reduce((acc, curr) => {
+            if(acc > curr) return acc - curr;
+             else return curr - acc ;
+        },0);
+    },
+
 
 };
 
-console.log(operationFunctions.sum([1, 2, 3, 4, 5, 6]));
+console.log(operationFunctions.sub([2,10,1, 2]));
+
+const subtração = (numeros) => {
+    
+}
+
+console.log(subtração([10,22, 3]));
